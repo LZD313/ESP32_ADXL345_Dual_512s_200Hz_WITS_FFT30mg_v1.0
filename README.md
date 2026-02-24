@@ -91,9 +91,11 @@ Step 3 – FFT
 
 ------------------------------------------------------------
 
-5. WITS OUTPUT FORMAT
+============================================================
+WITS OUTPUT FORMAT
+============================================================
 
-Data is sent once per second in the following format:
+Data is sent once per second in the following exact format:
 
 &&
 2711<X1>
@@ -110,7 +112,32 @@ Data is sent once per second in the following format:
 2816<FREQ2>
 !!
 
-Record meaning:
+IMPORTANT:
+
+Each record is printed on a NEW LINE.
+
+There are NO spaces between record number and value.
+
+Example (real numbers):
+
+&&
+271112
+271215
+271318
+271423
+271520
+271614
+281111
+281213
+281317
+281422
+281519
+281614
+!!
+
+------------------------------------------------------------
+
+RECORD MEANING
 
 2711 / 2811  Last absolute X value (mg)
 2712 / 2812  Last absolute Y value (mg)
@@ -119,6 +146,7 @@ Record meaning:
 2715 / 2815  AC RMS (mg)
 2716 / 2816  Dominant frequency (Hz, divided by 2)
 
+============================================================
 ------------------------------------------------------------
 
 6. NOISE BEHAVIOR
